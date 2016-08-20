@@ -2,7 +2,7 @@
 # File name: link_dir.sh
 # Author: Francis Schnee
 # Time: 2016-08-20
-helpinfo="This linux script is used to make link files from a directory."
+helpinfo="This linux script is used to make link files from a directory. \n"
 
 # Default values
 from_path="."
@@ -111,7 +111,7 @@ then
     # Support command options as "--?"
     if [ "${string%--*}" = "" ]
     then 
-        check_options $1
+        check_option $1
     else 
         check_path $1 $2
     fi 
